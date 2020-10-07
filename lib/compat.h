@@ -19,6 +19,7 @@
 #ifndef _COMPAT_H_
 #define _COMPAT_H_
 
+#include <time.h>
 #ifdef PS2_EE_PLATFORM
 
 #include <errno.h>

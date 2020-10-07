@@ -1106,7 +1106,7 @@ int nterror_to_errno(uint32_t status) {
         case SMB2_STATUS_FILE_DELETED:
                 return EPERM;
         case SMB2_STATUS_NO_MORE_FILES:
-                return ENODATA;
+                return -1;//ENODATA;
         case SMB2_STATUS_LOGON_FAILURE:
                 return ECONNREFUSED;
         case SMB2_STATUS_NOT_A_DIRECTORY:
